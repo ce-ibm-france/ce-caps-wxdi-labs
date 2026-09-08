@@ -1,0 +1,54 @@
+╔══════════════════════════════════════════════════════════════════╗
+║          LAB CONNECTION DETAILS — PARTICIPANT HANDOUT            ║
+╚══════════════════════════════════════════════════════════════════╝
+
+
+Confluent Bootstrap Server: 163.66.80.152:9094,163.66.80.152:9095,163.66.80.152:9096
+
+║  _____________________________________________________________  ║
+
+Kafka Username: admin
+Kafka Password: <TO_PROVIDE>
+
+║  _____________________________________________________________  ║
+
+Schema Registry URL: https://163.66.80.152/sr
+Schema Registry Username: admin
+Schema Registry Password: <TO_PROVIDE>
+
+║  _____________________________________________________________  ║
+
+Kafka Topic: fx_rates
+Consumer Group (suggested): streamsets-lab-<YOUR_INITIALS>
+Kafka CA Certificate: (file: kafka-ca.crt)
+
+║  _____________________________________________________________  ║
+
+Host: console-ibm-cator.lakehouse.saas.ibm.com
+Port: 443
+
+║  _____________________________________________________________  ║
+
+CRN: crn:v1:bluemix:public:lakehouse:ca-tor:a/abea1882de774cadadbfd5ba43f367a7:c532afd9-384e-4e4b-80e9-b18b08eedd31::
+
+║  _____________________________________________________________  ║
+
+Engine ID: presto727
+Engine Port: 32550
+Engine Host: 8d0611de-e2f0-40b3-ba89-6bc37ab7d3e0.d4mv6tlr0836v5jbau4g.lakehouse.ibmappdomain.cloud
+
+║  _____________________________________________________________  ║
+
+IBM Cloud API Key: <TO_PROVIDE>
+
+║  _____________________________________________________________  ║
+
+
+Target Catalog / Schema: iceberg / fx_analytics
+Target Table: fx_eurusd_<YOUR_INITIALS>
+
+║  _____________________________________________________________  ║
+
+SSL certificate: 
+
+<TO_PROVIDE>

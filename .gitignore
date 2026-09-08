@@ -1,0 +1,49 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Bob AI assistant
+.bob/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverrides
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+StreamSets/vsi-ssh/id_rsa.pub
+
+# Connector config files with real credentials (generated per instructor)
+StreamSets/setup/alphavantage-generator-*.json
+StreamSets/setup/alphavantage-connector-steve.json
+/StreamSets/vsi-ssh
