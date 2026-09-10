@@ -409,41 +409,7 @@ You should see Avro-decoded messages with various currency pair combinations flo
 
 ---
 
-## Step 4 — Verify the Stream in ksqlDB (Optional)
-
-This step is optional but useful for validating data quality.
-
-### 4a — Open the ksqlDB editor
-
-1. Click **ksqlDB** in the left navigation.
-2. Click the cluster name to open the editor.
-
-### 4b — Register a stream and query it
-
-```sql
-CREATE STREAM fx_rates_stream (
-  from_currency VARCHAR,
-  to_currency   VARCHAR,
-  rate          DOUBLE
-) WITH (
-  KAFKA_TOPIC   = 'fx_rates',
-  VALUE_FORMAT  = 'AVRO',
-  TIMESTAMP     = 'ROWTIME'
-);
-```
-
-Then query it:
-
-```sql
-SELECT from_currency, to_currency, rate, timestamp
-FROM fx_rates_stream
-EMIT CHANGES
-LIMIT 5;
-```
-
----
-
-## Step 5 — Record Connection Details for Participants
+## Step 4 — Record Connection Details for Participants
 
 Fill in the values below and distribute the completed sheet to participants at the start of the lab session (see [sample-participant-handout-sheet.txt](sample-participant-handout-sheet.txt)). Most values are available on the TechZone environment detail page; the Engine ID, Engine Host, Engine Port, and CRN come from the watsonx.data console.
 
