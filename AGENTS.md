@@ -30,7 +30,7 @@ Screenshots do not yet exist. Use this exact placeholder pattern — do **not** 
 Real screenshot references (files that exist) use standard `![alt](path)` syntax.
 
 ### Connector config (`alphavantage-generator.json`)
-Despite the name prefix, this connector uses **Confluent DatagenConnector** (not AlphaVantage API). It generates synthetic multi-currency exchange rate data for 10 `from_currency` × 10 `to_currency` combinations (`rate` range 0.05–200.0) at `max.interval = 30000 ms` (30 sec). Do not rename it — the filename is referenced throughout `TUTOR_SETUP.md` and the `.gitignore` pattern (`alphavantage-generator-*.json`).
+Despite the name prefix, this connector uses **Confluent DatagenConnector** (not AlphaVantage API). It generates synthetic multi-currency exchange rate data for 10 `from_currency` × 10 `to_currency` combinations (`rate` range 0.05–200.0) at `max.interval = 30000 ms` (30 sec). Do not rename it — the filename is referenced throughout `README.md` and the `.gitignore` pattern (`alphavantage-generator-*.json`).
 
 `from_currency` and `to_currency` draw from **disjoint lists** — `from_currency` is always one of EUR, GBP, CHF, CAD, AUD, NZD, SEK, NOK, DKK, SGD; `to_currency` is always one of USD, JPY, CNY, INR, BRL, MXN, ZAR, HKD, KRW, TRY. Same-pair records (e.g. EUR/EUR) are **structurally impossible**. Do not merge the two lists back into one single shared list.
 

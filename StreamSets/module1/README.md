@@ -2,7 +2,7 @@
 
 > **Audience:** Lab participant  
 > **Duration:** ~60 minutes  
-> **Prerequisites:** Your tutor has completed the [Confluent and watsonx.data setup](../setup/TUTOR_SETUP.md) and handed you the connection details sheet.
+> **Prerequisites:** Your tutor has completed the [Confluent and watsonx.data setup](../setup/README.md) and handed you the connection details sheet.
 
 ---
 
@@ -579,7 +579,7 @@ The pipeline is now running autonomously. Every time a new EUR/USD tick arrives 
 
 ## What's Next
 
-Proceed to **[Module 2](../module2/MODULE2.md)** — you will import this watsonx.data table into an IBM Data Integration project and build the EUR/USD rate line chart visualisation.
+Proceed to **[Module 2](../module2/README.md)** — you will import this watsonx.data table into an IBM Data Integration project and build the EUR/USD rate line chart visualisation.
 
 ---
 

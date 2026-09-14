@@ -82,9 +82,9 @@ The visualisation you will produce at the end of Module 2 looks like this:
 
 | Module | Title | Who | Duration |
 |--------|-------|-----|----------|
-| **Setup** | [Confluent Cluster and watsonx.data Environment Preparation](setup/TUTOR_SETUP.md) | Tutor / Pre-lab | ~30 min |
-| **Module 1** | [Build the StreamSets Kafka-to-Presto Pipeline](module1/MODULE1.md) | Participant | ~90 min |
-| **Module 2** | [Import the Table & Visualise in IBM Data Integration](module2/MODULE2.md) | Participant | ~45 min |
+| **Setup** | [Confluent Cluster and watsonx.data Environment Preparation](setup/README.md) | Tutor / Pre-lab | ~30 min |
+| **Module 1** | [Build the StreamSets Kafka-to-Presto Pipeline](module1/README.md) | Participant | ~90 min |
+| **Module 2** | [Import the Table & Visualise in IBM Data Integration](module2/README.md) | Participant | ~45 min |
 
 > **Note for participants:** The tutor will have completed the **Setup** module before the lab session starts. You will be given the Confluent bootstrap URL, Schema Registry endpoint and credentials before beginning Module 1.
 
@@ -126,21 +126,21 @@ The Kafka topic carries rates for all currency combinations. The StreamSets pipe
 StreamSets/
 ├── README.md                       ← You are here
 ├── setup/
-│   ├── TUTOR_SETUP.md              ← Step-by-step tutor guide
+│   ├── README.md              ← Step-by-step tutor guide
 │   └── alphavantage-generator.json ← Connector config for multi-currency feed
 ├── module1/
-│   └── MODULE1.md                  ← Participant guide: StreamSets pipeline build
+│   └── README.md                  ← Participant guide: StreamSets pipeline build
 └── module2/
-    └── MODULE2.md                  ← Participant guide: data import & visualisation
+    └── README.md                  ← Participant guide: data import & visualisation
 ```
 
 ---
 
 ## Ready to Start?
 
-**Tutors** → open [`setup/TUTOR_SETUP.md`](setup/TUTOR_SETUP.md) and follow every step before participants arrive.
+**Tutors** → open [`setup/README.md`](setup/README.md) and follow every step before participants arrive.
 
-**Participants** → wait for your tutor to hand out the connection details sheet, then open **[Module 1](module1/MODULE1.md)** and follow the steps in order.
+**Participants** → wait for your tutor to hand out the connection details sheet, then open **[Module 1](module1/README.md)** and follow the steps in order.
 
 ---
 

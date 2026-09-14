@@ -11,6 +11,7 @@ Each subfolder is a self-contained lab with its own participant guide, tutor set
 | Lab | Title | Level | Duration |
 |-----|-------|-------|----------|
 | [`StreamSets/`](StreamSets/README.md) | Real-Time FX Rate Analytics with IBM watsonx.data Integration StreamSets | Intermediate | 3–4 hrs |
+| [`DataStage/`](DataStage/README.md) | Batch Integration with watsonx.data integration DataStage | Beginner | 1h |
 
 ---
 
@@ -20,11 +21,14 @@ Each subfolder is a self-contained lab with its own participant guide, tutor set
 ce-caps-wxdi-labs/
 ├── README.md                  ← You are here
 ├── .gitignore
-└── StreamSets/                ← StreamSets lab
+├── StreamSets/                ← StreamSets lab
+│   ├── README.md              ← Lab welcome & overview
+│   ├── setup/                 ← Tutor pre-lab setup guide
+│   ├── module1/               ← Participant: build the pipeline
+│   └── module2/               ← Participant: import & visualise
+└── DataStage/                 ← DataStage lab
     ├── README.md              ← Lab welcome & overview
-    ├── setup/                 ← Tutor pre-lab setup guide
-    ├── module1/               ← Participant: build the pipeline
-    └── module2/               ← Participant: import & visualise
+    └── module1/               ← Participant: build the pipeline
 ```
 
 ---
