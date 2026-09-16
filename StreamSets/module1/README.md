@@ -353,6 +353,8 @@ Scroll down to the **Credentials** section and fill in:
 | **API Key** | *(IBM Cloud API key from your connection sheet)* |
 
 > **Where to get the API key:** Your tutor will provide an IBM Cloud API key that has access to the watsonx.data instance.
+> **or** create a personal IBM Cloud API key:
+  1. Open **[https://cloud.ibm.com/iam/apikeys](https://cloud.ibm.com/iam/apikeys)**.
 
 ### 6d — Configure the Tables section
 
@@ -411,7 +413,7 @@ DATA_FORMAT_06 — Cannot create the parser factory:
 
 You need to build a custom JKS truststore that contains the VSI's certificate and the Kafka CA certificate, upload it to the VSI, restart the engine with the truststore volume mounted, and point the pipeline at it.
 
-**Step A — Download the VSI certificate from your browser**
+**Step A — Download the VSI certificate from your browser (already done)**
 
 1. Open your `https` registry url in Chrome (eg: https://163.66.85.93/sr).
 2. Click the **Not Secure** padlock → **Certificate details** → navigate to the certificate details panel.
@@ -419,11 +421,11 @@ You need to build a custom JKS truststore that contains the VSI's certificate an
 
 ![*Chrome's certificate details popup for `163.66.85.93`, showing the "Not Secure" warning. The Certificate details panel is open. The certificate's validity period shows an expired date.*](../images/screenshots/ts-01-browser-certificate-details.png)
 
-**Step B — Download the Kafka CA certificate from the VSI**
+**Step B — Download the Kafka CA certificate from the VSI  (already done)**
 
 The kafka CA certificate should already have been shared with you.
 
-**Step C — Build the JKS truststore**
+**Step C — Build the JKS truststore  (already done)**
 
 Import both certificates into a new JKS keystore named `kafka.ts` (password `changeit`):
 
@@ -437,13 +439,13 @@ keytool -import -trustcacerts -noprompt -alias vsi-ca \
   -file ./vsi-cert.pem -keystore ./kafka.ts -storepass changeit
 ```
 
-**Step D — Upload the truststore to the VSI**
+**Step D — Upload the truststore to the VSI  (already done)**
 
 ```bash
 scp -i id_rsa.pub ./kafka.ts root@###vsi_ip###:/var/lib/confluent-access/
 ```
 
-**Step E — Restart the StreamSets engine with the volume mounted**
+**Step E — Restart the StreamSets engine with the volume mounted  (already done)**
 
 SSH into the VSI, stop any running container, then start a new one with the `/var/lib/confluent-access/` folder mounted to `/confluent` inside the container (option `-v /var/lib/confluent-access:/confluent` added to the docker run command)
 
