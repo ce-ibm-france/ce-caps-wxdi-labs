@@ -352,9 +352,7 @@ Scroll down to the **Credentials** section and fill in:
 |----------|-------|
 | **API Key** | *(IBM Cloud API key from your connection sheet)* |
 
-> **Where to get the API key:** Your tutor will provide an IBM Cloud API key that has access to the watsonx.data instance.
-> **or** create a personal IBM Cloud API key:
-  1. Open **[https://cloud.ibm.com/iam/apikeys](https://cloud.ibm.com/iam/apikeys)**.
+> **Where to get the API key:** Your tutor will provide an IBM Cloud API key that has access to the watsonx.data instance. If you want, you can also create a personal IBM Cloud API key here **[https://cloud.ibm.com/iam/apikeys](https://cloud.ibm.com/iam/apikeys)**.
 
 ### 6d — Configure the Tables section
 
