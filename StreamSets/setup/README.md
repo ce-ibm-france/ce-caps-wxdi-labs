@@ -427,14 +427,14 @@ Confluent Bootstrap Server: <host>:9094,<host>:9095,<host>:9096
 
 ║  _____________________________________________________________  ║
 
-Kafka Username: admin
-Kafka Password: <SASL password from TechZone>
+Kafka Username: kafka-admin
+Kafka Password: <kafka SASL password from TechZone>
 
 ║  _____________________________________________________________  ║
 
 Schema Registry URL: https://<host>/sr
 Schema Registry Username: admin
-Schema Registry Password: <SASL password from TechZone>
+Schema Registry Password: <Confluent password from TechZone>
 
 ║  _____________________________________________________________  ║
 
@@ -479,9 +479,9 @@ SSL certificate:
 | Field | Source |
 |---|---|
 | Confluent Bootstrap Server | TechZone environment detail page → Kafka bootstrap servers |
-| Kafka Username / Password | TechZone environment detail page → SASL credentials |
+| Kafka Username / Password | TechZone environment detail page → Kafka SASL credentials |
 | Schema Registry URL | TechZone environment detail page → Schema Registry endpoint |
-| Schema Registry Username / Password | Same SASL credentials as Kafka |
+| Schema Registry Username / Password | Confluent environment credentials |
 | Kafka CA Certificate | Retrieved in [Part 0.4](#04--retrieve-and-distribute-the-kafka-ca-certificate) |
 | Host / Port (watsonx.data) | watsonx.data console → instance overview |
 | CRN | watsonx.data console → instance overview → CRN |
