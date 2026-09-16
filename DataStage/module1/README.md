@@ -90,7 +90,7 @@ Golden Bank needs to adhere to a new regulation where it cannot lend to underqua
 
 ### 2.3 Lab Pre-requisite – Download the lab project files
 
-1. Download the project ZIP file for this lab using the link. Click **Download** on the top right.
+1. Download the project ZIP file for this lab using the [link](https://ibm.box.com/s/h9quqs5030bxer44lipeqddv80r6um1d). Click **Download** on the top right.
 
    ![Download project files](../images/image06.png)
 
